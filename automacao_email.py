@@ -8,12 +8,12 @@ from email.mime.multipart import MIMEMultipart
 
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
-EMAIL_REMETENTE = 'automatizei@gmail.com'
-EMAIL_SENHA = 'aeffneckfbzjbzde'
+EMAIL_REMETENTE = 'seuemail@gmail.com'
+EMAIL_SENHA = '***************'
 
 NOME_EMPRESA = 'Assescor Assessoria e Corretagem'
 NOME_RESPONSAVEL = 'Juan Pablo Montoya'
-TELEFONE_CONTATO = 21968045339
+TELEFONE_CONTATO = 21999999999
 
 # FUNÇÃO DE ENVIO DE EMAIL
 def enviar_email(destinatario:str, assunto:str, mensagem:str) -> None:

@@ -5,7 +5,7 @@ Este projeto é uma automação em **Python** que lê uma planilha do Excel com 
 - Email de agradecimento para clientes que estão **em dia** com o pagamento.
 - Email de **cobrança** quando o pagamento estiver atrasado (2 dias, 5 dias).
 - Email de **notificação de protesto** (15 dias de atraso).
-- Email de **notificação extra judicial** (35 dias de atraso).
+- Email de **notificação extra judicial** (20 dias de atraso).
 
 O sistema foi pensado para **imobiliárias**, mas pode ser adaptado para qualquer tipo de cobrança recorrente.
 
