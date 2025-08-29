@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso Cobrança</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5;">
+    
+    <table style="width: 100%; border: 0; background-color: #f5f5f5;" cellspacing="0" cellpadding="0"><!--Container Principal-->
+        <tr>
+            <td style="padding: 20px 0;" align="center">
+                <table width="100%" cellspacing="0" cellpadding="0" style="max-width: 80%; border-radius: 10px; overflow: hidden; background-color: #fff; box-shadow:0 3px 10px rgba(0, 0, 0, 0.1);"><!-- Conteudo email -->
+                    <tr><!-- Header -->
+                        <td style="background-color: #ff6348; padding: 30px 20px; text-align: center; color: #fff;">
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                <tr>
+                                    <td style="font-size: 28px; font-weight: bold; padding-bottom: 10px;">
+                                        {{nome_empresa}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 18px; font-weight: 300;">
+                                        Encontrando o lar perfeito pra você!
+                                    </td>
+                                </tr><!-- Fim Header -->
+                            </table>
+                        </td>
+                    </tr>  
+                    <tr><!-- Conteudo Principal -->
+                        <td style="background-color: #f9f9f9; padding: 40px 30px;">
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" >
+                                <tr>
+                                    <td style="font-size: 22px; color: #2c3e50; padding-bottom: 20px; border-bottom: 3px solid #ff6348;">
+                                        Prezado(a) {{nome}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 25px; font-size: 16px; color: #34495e; line-height: 1.6;">
+                                        Conforme verificação em nosso sistema, identificamos que o boleto referente ao aluguel do imóvel localizado em {{endereco}}, com vencimento em {{data_venc}}, encontra-se em atraso há {{dias_atraso}} dias.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 25px; font-size: 16px; color: #34495e; line-height: 1.6;">
+                                        Solicitamos a regularização do pagamento o mais breve possível, conforme previsto em contrato.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 25px; font-size: 16px; color: #34495e; line-height: 1.6;">
+                                        Caso o pagamento já tenha sido realizado, por gentileza desconsidere este comunicado.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 20px; font-size: 16px; color:#34495e; line-height: 1.6;">
+                                        Agradecemos sua pontualidade e confiança em nossa imobiliária
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 30px;">
+                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #fff; border-left: 10px solid #ff6348; padding: 20px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);">
+                                            <tr>
+                                                <td style="font-size: 16px; color: #2c3e50;">
+                                                    <strong>Valor Principal: <span style="color: #ff6348; font-weight: bold;">{{valor}}</span></strong>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 16px; color: #2c3e50; padding-top: 8px;">
+                                                    <strong>Vencimento: <span>{{data_venc}}</span></strong>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 16px; color: #2c3e50; padding-top: 8px;">
+                                                    <strong>Imovel: </strong>{{endereco}}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 16px; color: #2c3e50; padding-top: 8px;">
+                                                    <strong>Status: </strong>
+                                                    <span style="color: #cc0a0a; font-weight: bold;" >Pagamento em Aberto</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 30px; text-align: center;">
+                                       
+                                    </td>
+                                </tr>
+                                <tr><!-- Footer -->
+                                    <td style="background-color: #2c3e50; padding: 30px 20px; text-align: center; color: #fff;">
+                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tr style="font-size: 20px; color: #ffa500; padding-bottom: 15px;">
+                                                <td>{{nome_empresa}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size: 15px; padding-bottom: 10px;">
+                                                    Em caso de dúvidas entre em contato.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding-top: 20px;">
+                                                    <table width="80%" cellspacing="0" cellpadding="0" style="padding: 10px 15px; text-align: center; border: 1px solid #ff6348">
+                                                        <tr>
+                                                            <td style="font-size: 15px; padding: 5px 0;">
+                                                                Telefone: {{telefone_contato}}
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-size: 15px; padding: 5px 0;">
+                                                                Email: {{email_contato}}
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-top: 25px; font-size: 14px; color: #ccc;">
+                                                    &copy; 2023 {{nome_empresa}}. Todos os direitos reservados.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr><!-- Fim Footer --> 
+                            </table>
+                        </td>
+                    </tr><!-- Fim Conteudo Principal -->                 
+                </table><!--Fim Conteudo email-->
+            </td>
+        </tr>
+    </table><!--Fim Container Principal-->
+</body>
+</html>
